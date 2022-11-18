@@ -5,21 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
-    IEnumerator OnTriggerEnter2D(Collider2D collision)
+    IEnumerator OnTriggerEnter2D(Collider2D other)
     {
-        if(collision.CompareTag("Player"))
+        if(other.CompareTag("Player"))
         {
             ScreenFader sf = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
 
             yield return StartCoroutine(sf.FadeToBlack());
 
             SceneManager.LoadScene("BattleScene");
+
+            yield return StartCoroutine(sf.FadeToClear());
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
