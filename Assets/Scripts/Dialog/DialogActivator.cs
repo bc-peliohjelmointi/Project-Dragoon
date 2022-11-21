@@ -21,7 +21,7 @@ public class DialogActivator : MonoBehaviour
     // Lippu, joka kertoo onko kyseess‰ QuestTrigger
     public bool isQuest;
     // Refrenssi QuestManageriin
-    // private QuestManager questManager;
+    private QuestManager questManager;
     // Teht‰v‰numero
     public int questNumber;
 
@@ -31,7 +31,7 @@ public class DialogActivator : MonoBehaviour
     private void Start()
     {
         // Luodaan yhteys QuestManageriin
-       // questManager = FindObjectOfType<QuestManager>();
+        questManager = FindObjectOfType<QuestManager>();
     }
 
     // Update-metodi aukaisee dialogin tarvittaessa 
@@ -116,8 +116,8 @@ public class DialogActivator : MonoBehaviour
     void StartQuest()
     {
         // Pyyt‰‰ QuestManageria aktivoimaan teht‰v‰n ja n‰ytt‰m‰‰n aloitustekstit
-       // questManager.quests[questNumber].gameObject.SetActive(true);
-       // questManager.quests[questNumber].StartQuest();
+        questManager.quests[questNumber].gameObject.SetActive(true);
+        questManager.quests[questNumber].StartQuest();
 
         // Poistaa DialogActivatorin
         gameObject.SetActive(false);
