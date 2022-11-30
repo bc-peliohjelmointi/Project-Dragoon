@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerData
+public class EnemyData
 {
     public float[] position;
 
-    public PlayerData(Player player)
+    public EnemyData(Eanemy eanmeny)
     {
         position = new float[2];
-        position[0] = player.transform.position.x;
-        position[1] = player.transform.position.y;
+        position[0] = eanmeny.transform.position.x;
+        position[1] = eanmeny.transform.position.y;
     }
 }

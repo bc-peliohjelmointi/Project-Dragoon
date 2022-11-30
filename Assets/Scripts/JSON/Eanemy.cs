@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using TMPro;
-public class Player : MonoBehaviour
+public class Eanemy : MonoBehaviour
 {
-    private static Player instance;
+    private static Eanemy instance;
 
-    public static Player Instance
+    public static Eanemy Instance
     {
         get
         {
@@ -23,26 +23,28 @@ public class Player : MonoBehaviour
     {
         instance = this;
     }
+
     private void Update()
     {
         if (BattleSystem.isDead)
         {
-            LoadPlayerDataFromJSON();
+            LoadEanemyDataFromJSON();
+            BattleSystem.isDead = false;
         }
     }
-    public void LoadPlayerDataFromJSON()
+    private void LoadEanemyDataFromJSON()
     {
-        PlayerData playerData = DataManager.LoadPlayerDataFromJSON();
+        EnemyData enemyData = DataManager.LoadEnemyDataFromJSON();
         Vector2 position = new Vector2()
         {
-            x = playerData.position[0],
-            y = playerData.position[1],
+            x = enemyData.position[0],
+            y = enemyData.position[1],
         };
         transform.position = position;
     }
-    public void SavePlayerDataToJSON()
+    public void SaveEanemyDataToJSON()
     {
         Debug.Log(message: "Toimii");
-        DataManager.SavePlayerDataToJSON(this);
+        DataManager.SaveEanemyDataToJSON(this);
     }
 }

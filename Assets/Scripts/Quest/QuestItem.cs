@@ -44,12 +44,6 @@ public class QuestItem : MonoBehaviour
 
                 // Deaktivoidaan esine
                 gameObject.SetActive(false);
-
-                // Ansaitut kullat tai EXP-pisteet koodataan tähän
-
-                // Tehdäänkö esineelle jotain? ehkä siirto inventoriin, tai otetaan se käyttöön, vai mitä??
-
-                // Myös ääniefekti koodataan tähän
             }
         }
     }

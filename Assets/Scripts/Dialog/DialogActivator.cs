@@ -119,6 +119,8 @@ public class DialogActivator : MonoBehaviour
         questManager.quests[questNumber].gameObject.SetActive(true);
         questManager.quests[questNumber].StartQuest();
 
+        GameObject.FindGameObjectsWithTag("item");
+
         // Poistaa DialogActivatorin
         gameObject.SetActive(false);
     }
