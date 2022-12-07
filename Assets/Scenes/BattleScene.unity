@@ -1304,7 +1304,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1680158826}
-  - component: {fileID: 1680158825}
   m_Layer: 0
   m_Name: Scene Combat
   m_TagString: Untagged
@@ -1312,18 +1311,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1680158825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680158824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77a895d170b02c64ca4b6fb38978747d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1680158826
 Transform:
   m_ObjectHideFlags: 0
@@ -1539,7 +1526,7 @@ MonoBehaviour:
   EnemyHUD: {fileID: 979733751}
   PlayerHUD: {fileID: 1246920183}
   GameOver: {fileID: 1621474641}
-  levelName: 
+  levelName: SampleScene
   state: 0
 --- !u!4 &2093445776
 Transform:

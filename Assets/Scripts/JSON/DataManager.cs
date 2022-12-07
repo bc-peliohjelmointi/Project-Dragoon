@@ -16,7 +16,7 @@ public static class DataManager
     {
         EnemyData enemyData = new EnemyData(eanemy);
         string json = JsonUtility.ToJson(enemyData);
-        File.WriteAllText($"{Application.dataPath}/Scripts/JSON/EnemyData.json", json);
+        File.WriteAllText($"{Application.dataPath}/EnemyData.json", json);
     }
     public static PlayerData LoadPlayerDataFromJSON()
     {
@@ -26,7 +26,7 @@ public static class DataManager
     }
     public static EnemyData LoadEnemyDataFromJSON()
     {
-        string json = File.ReadAllText($"{Application.dataPath}/Scripts/JSON/EnemyData.json");
+        string json = File.ReadAllText($"{Application.dataPath}/EnemyData.json");
         EnemyData enemyData = JsonUtility.FromJson<EnemyData>(json);
         return enemyData;
     }

@@ -49,10 +49,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Movements();
-        // Animations();
+        Animations();
     }
 
-    /*void Animations()
+    void Animations()
     {
         // Voiko pelihahmo liikkua?
         if (canMove && mov.magnitude != 0)
@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("Walking", false);
         }
     }
-    */
+    
     void Movements()
     {
         // Otetaan pelihahmon suuntavektori talteen

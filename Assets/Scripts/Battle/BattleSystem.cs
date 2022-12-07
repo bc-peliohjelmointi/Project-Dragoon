@@ -28,7 +28,6 @@ public class BattleSystem : MonoBehaviour
     public GameObject EnemyHUD;
     public GameObject PlayerHUD;
     public GameObject GameOver;
-    public string levelName;
 
     public static bool isDead = false;
 

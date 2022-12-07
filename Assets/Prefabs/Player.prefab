@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4083324809688030107}
   - component: {fileID: 2091071165122828463}
   - component: {fileID: 2091071165122828459}
-  - component: {fileID: 1694075858}
+  - component: {fileID: 1944368932}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 183872883
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.94117653, g: 0.121568635, b: 0.29803923, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 1e7a2f08a130c234cac0282f102f1083, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,9 +99,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011141181, y: 0}
+  m_Offset: {x: 0.012552857, y: -0.3851615}
   serializedVersion: 2
-  m_Radius: 0.7116821
+  m_Radius: 0.36981788
 --- !u!50 &2091071165122828463
 Rigidbody2D:
   serializedVersion: 4
@@ -138,15 +138,22 @@ MonoBehaviour:
   speed: 4
   Overworld: {fileID: 0}
   canMove: 0
---- !u!114 &1694075858
-MonoBehaviour:
+--- !u!95 &1944368932
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091071165122828462}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8a8ccedb29a5164e949c21aedc58599, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 43050bec141e9ad43a06e72be11a2496, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

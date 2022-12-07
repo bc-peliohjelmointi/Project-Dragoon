@@ -613,7 +613,7 @@ MonoBehaviour:
   leftLimit: -2
   rightLimit: 26
   bottomLimit: -7
-  topLimit: 6
+  topLimit: 3
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2608,11 +2608,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8257911605561343728, guid: da1727b58b5bd2445b5866c7ab92c389, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.34
+      value: 15.37
       objectReference: {fileID: 0}
     - target: {fileID: 8257911605561343728, guid: da1727b58b5bd2445b5866c7ab92c389, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.22
+      value: -6.55
       objectReference: {fileID: 0}
     - target: {fileID: 8257911605561343728, guid: da1727b58b5bd2445b5866c7ab92c389, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2650,10 +2650,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 8257911605561343730, guid: da1727b58b5bd2445b5866c7ab92c389, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da1727b58b5bd2445b5866c7ab92c389, type: 3}
 --- !u!1001 &8953679405201323564
@@ -2663,10 +2659,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8953679403393113888, guid: c261db07cf7e888428b358ca711a261d, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8953679403393113889, guid: c261db07cf7e888428b358ca711a261d, type: 3}
       propertyPath: m_RootOrder
       value: 3
